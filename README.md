@@ -72,8 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 mkdir React
 cd React
-npx create-react-app react18
+npx create-react-app react18 // creates react application with necessary packages
 cd react18
-npm start
+npm start // runs the application on server
+
 
 
