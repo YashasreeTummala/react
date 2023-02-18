@@ -76,5 +76,6 @@ npx create-react-app react18 // creates react application with necessary package
 cd react18
 npm start // runs the application on server
 
-
+npm - node package manager helps to install packages like bootstrap etc..
+  npm i bootstrap
 
