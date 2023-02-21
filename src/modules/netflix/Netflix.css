@@ -1,5 +1,5 @@
 .bgImg {
-    background-image : url(images/netflixbg.jpeg);
+    background-image : url(/src/images/netflixbg.jpeg);
     background-size : 100% 100%;
     background-repeat : no-repeat;
     height : 100vh;
