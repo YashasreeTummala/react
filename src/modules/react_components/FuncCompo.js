@@ -1,12 +1,12 @@
 import React from 'react'
 import './Compo.css'
-import Button from './Button.js'
+import Button1 from './Button1.js'
 
 function FuncCompo() {
   return (
     <div className="func">
       <h2>Functional Component</h2>
-      <Button name="Functional Button"> </Button>
+      <Button1 name="Functional Button"> </Button1>
     </div>
   )
 }
