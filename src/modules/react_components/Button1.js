@@ -5,7 +5,7 @@ function Button1(props) {
   console.log(props)
   return (
     <div>
-        <button> {props.parent} BUTTON 1 </button>
+        <button onClick={()=> props.onChange("This is from CHILD")}> {props.parent} BUTTON 1 </button>
         <Button2 child = {props.child} grandChild = {props.grandChild}/>
     </div>
   )
