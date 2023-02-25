@@ -48,9 +48,7 @@ export default function Weather () {
                 <h1 className='text-center'>Static Weather Application</h1>
             </div>
             <div className='d-flex justify-content-between'>
-
                 {weather.length>0 && weather.map((item,index) => (
-                    
                     <div className='border text-center p-3 m-3 rounded col-md-2 key={index}'>
                         <p> <b>{item.day} </b></p>
                         <p className='small'> {item.time} </p>

@@ -1,15 +1,32 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
-
-import Button1 from "./modules/react_components/Button1";
+import Album from "./modules/music_store/Album";
+import Header from "./modules/music_store/Header";
+import Player from "./modules/music_store/Player";
 
 function App() {
-  const [childData, setChildData] = useState("Yash-Click here")
+  const [song, setSong] = useState("Malang.mp3");
+
   return (
-    <div className="buttons">
-      <Button1 parent={childData} child="Sara" grandChild="Karl" onChange = {(data)=> setChildData(data)}/>
+    <div className="App">
+      <Header />
+      <Album updateSong={(updatedSong) => setSong(updatedSong)} />
+      <Player song={song} />
     </div>
   );
 }
+
 export default App;
 
+
+
+
+
+// function App() {
+//   const [childData, setChildData] = useState("Yash-Click here")
+//   return (
+//     <div className="buttons">
+//       <Button1 parent={childData} child="Sara" grandChild="Karl" onChange = {(data)=> setChildData(data)}/>
+//     </div>
+//   );
+// }

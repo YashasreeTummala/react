@@ -4,14 +4,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import App from './App';
 import './index.css';
-import ClassCompo from './modules/react_components/ClassCompo';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <ClassCompo />
   </React.StrictMode>
 );
 

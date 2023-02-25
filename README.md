@@ -79,3 +79,7 @@ npm start // runs the application on server
 npm - node package manager helps to install packages like bootstrap etc..
   npm i bootstrap
 
+
+npm install @material-ui/core @material-ui/icons
+  
+npm install react-h5-audio-player
