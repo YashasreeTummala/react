@@ -7,9 +7,18 @@ import Player from "./modules/music_store/Player";
 function App() {
   const [song, setSong] = useState("Malang.mp3");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Submitted")
+  }
+
   return (
     <div className="App">
       <Header />
+      <form onSubmit={handleSubmit}>
+          <input type="text" value={song} onChange={(e) => setSong(e.target.value)} />
+          <input type="submit" value="Submit" />
+      </form>
       <Album updateSong={(updatedSong) => setSong(updatedSong)} />
       <Player song={song} />
     </div>
